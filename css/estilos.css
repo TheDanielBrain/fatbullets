@@ -1,10 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /*background-color:#ebebeb;*/
+  background-image: url("../img/pattern29.png");
+}
+
 .navbar{
         margin-top: 25px;
 }
 h2{
     margin: 0;     
     color: #666;
-    padding-top: 90px;
+    padding-top: 0px;
     font-size: 52px;
     font-family: "trebuchet ms", sans-serif;    
 }
@@ -13,13 +26,41 @@ h2{
     text-align: center;
     height: 300px !important;
 }
-.carousel{
+/*.carousel{
     margin-top: 20px;
-}
+}*/
 .bs-example{
-	margin: 20px;
+  margin: 20px;
 }
- 
+
+.footer {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 15px;
+}
+
+/*.panel-footer{
+  background-color:#337ab7;
+  border-color: #337ab7;
+  color: #FFFFFF;
+
+ }*/
+
+.copyright{
+  color: #FFF;
+  text-align:center;
+  background:#373737;
+  padding:10px 0px;
+}
+
+.copyright a{
+  color: #666;
+  text-decoration:underline;
+}
+
  /*-------------------Estilos barra de avance--------------------*/
  .pace {
   -webkit-pointer-events: none;
@@ -42,4 +83,200 @@ h2{
   right: 100%;
   width: 100%;
   height: 2px;
+}
+
+/*-------------------Estilos slideshow-------------------- */
+/** {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}*/
+ 
+.main {
+  width:90%;
+  max-width:1000px;
+  margin:20px auto;
+}
+ 
+.slides {
+  width:100%;
+}
+ 
+.slides img {
+  width:100%;
+}
+ 
+.slidesjs-pagination {
+  list-style:none;
+  overflow:hidden;
+  float:left;
+}
+ 
+.slidesjs-pagination li {
+  float:left;
+}
+ 
+.slidesjs-pagination li a {
+  display:block;
+  padding:5px 10px;
+  color:#fff;
+  
+  float:left;
+}
+ 
+.slidesjs-pagination li a:hover {
+  background:#000;
+}
+ 
+.slides .active {
+  background:#000;
+}
+ 
+.slidesjs-navigation{
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  float:right;
+}
+
+.slides {
+  display: none
+}
+
+.container {
+  margin: 0 auto
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container {
+    width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .container {
+    width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+}
+
+/* --------- estilos contenido ------------*/
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+
+.post {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0, .5);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.post article .titulo {
+  font-family: "Oswald", Arial, Sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 28px;
+  /*margin-bottom: 10px;*/
+}
+
+.post article .titulo a {
+  color:#000;
+}
+
+.post article .fecha {
+  color:#747474;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.post article .thumb {
+  margin-bottom: 20px;
+}
+
+.post article .thumb img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.post article .extracto {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.post article .continuar {
+  color:#BB1F35;
+  font-weight: bold;
+}
+
+/* --- Paginacion --- */
+
+.paginacion {
+  margin-bottom: 30px;
+}
+
+.paginacion ul {
+  list-style: none;
+  text-align: center;
+}
+
+.paginacion ul li {
+  display: inline-block;
+  margin:0 5px;
+  color:#fff;
+}
+
+.paginacion ul li a {
+  display: block;
+  padding:10px 20px;
+  background: #595959;
+  color:#fff;
+}
+
+.paginacion ul li a:hover {
+  background: #BB1F35;
+  text-decoration: none;
+}
+
+.paginacion ul .active {
+  background: #BB1F35;
+  padding:10px 20px;
+}
+
+.paginacion ul .disabled{
+  background: #a8a8a8;
+  padding:10px 20px;
+  cursor: not-allowed;
+}
+
+.paginacion ul .disabled:hover {
+  background: #a8a8a8;
 }

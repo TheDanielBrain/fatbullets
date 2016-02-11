@@ -1,124 +1,77 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Fatbullets Studio</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="pace.min.js"></script>
-<link href="estilos.css" rel="stylesheet" />
-<link href="flash_theme.css" rel="stylesheet" />
-<style type="text/css">
-.navbar{
-        margin-top: 25px;
-}
-h2{
-    margin: 0;     
-    color: #666;
-    padding-top: 90px;
-    font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;    
-}
-.item{
-    background: #333;    
-    text-align: center;
-    height: 300px !important;
-}
-.carousel{
-    margin-top: 20px;
-}
-.bs-example{
-	margin: 20px;
-}
-</style>
-</head>
-<body>
+<?php require 'views/header.php' ?>
 
-<div class="container">
-    <nav role="navigation" class="navbar navbar-inverse">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">Fatbullets</a>
+    <div class="main">
+        <div class="slides">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="">
+            <img src="img/3.png" alt="">
         </div>
-        
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Inicio</a></li>
-                <li><a href="estrenos.php">Estrenos</a></li>
-                <li><a href="#">Integrantes</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
-                <!--<li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">Drafts</a></li>
-                        <li><a href="#">Sent Items</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Trash</a></li>
-                    </ul>
-                </li>-->
-            </ul>
-            <!--<form role="search" class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" placeholder="Search" class="form-control">
-                </div>
-            </form>-->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Iniciar sesión</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-
-<div class="bs-example">
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-    	<!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-       <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="active item">
-                <h2>Slide 1</h2>
-                <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="item">
-                <h2>Slide 2</h2>
-                <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                </div>
-            </div>
-            <div class="item">
-                <h2>Slide 3</h2>
-                <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
     </div>
-</div>
-</body>
-</html>                                		
+
+<!-- CONTACTO SACARLO EN SU PROPIO ARCHIVO Y UNIRLO MVC-->
+    <div class = "modal fade" id = "contacto" role = "dialog">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <form class = "form-horizontal">
+                    <div class = "modal-header">
+                        <h4>Escríbenos</h4>
+                    </div>
+                    <div class = "modal-body">
+                        <div class = "form-group">
+                            <label for = "contact-name" class = "col-lg-2 control-label">Nombre:</label>
+                            <div class = "col-lg-10">
+                                <input type = "text" class = "form-control" id = "contact-name" placeholder = "Escribe tu nombre aquí" required>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                            <div class = "col-lg-10">
+                                <input type = "email" class = "form-control" id = "contact-email" placeholder = "tu@correo.com" required>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label for = "contact-msg" class = "col-lg-2 control-label">Mensaje:</label>
+                            <div class = "col-lg-10">
+                                <textarea class = "form-control" rows = "8" placeholder = "Escribe aquí tu mensaje" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "modal-footer">
+                        <a class = "btn btn-default" data-dismiss = "modal">Cerrar</a>    
+                        <button class = "btn btn-primary" type = "submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACTO SACARLO EN SU PROPIO ARCHIVO Y UNIRLO MVC-->
+
+    <!--<section id="content">
+        <div class="wrap-content zerogrid">
+            <div class="row block01">
+                <div class="col-1-3">
+                    <div class="wrap-col box">
+                        <h2>Imagen 1</h2>
+                        <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
+                        <div class="more"><a href="#">[...]</a></div>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="wrap-col box">
+                        <h2>Imagen 2</h2>
+                        <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
+                        <div class="more"><a href="#">[...]</a></div>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="wrap-col box">
+                        <h2>Imagen 3</h2>
+                        <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
+                        <div class="more"><a href="#">[...]</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+<?php require 'views/footer.php' ?>
