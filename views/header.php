@@ -4,22 +4,14 @@
 <meta charset="UTF-8">
 <title>Fatbullets Studio</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
 <link rel="StyleSheet" href="css/estilos.css" type="text/css">
 <link rel="stylesheet" href="fonts/style.css" type="text/css">
 <link href="css/flash_theme.css" rel="stylesheet" type="text/css"/>
 <link href='img/fav.ico' rel='icon' type='image/x-icon'/>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script src="js/pace.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
@@ -34,7 +26,6 @@
 <!-- MENÚ -->
 <div class="container">
     <nav role="navigation" class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>

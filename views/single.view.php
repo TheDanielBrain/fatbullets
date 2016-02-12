@@ -27,7 +27,7 @@
             
             <aside class="col-md-3 hidden-xs hidden-sm">
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">Diseño Web</a>
+                    <a href="#" class="list-group-item">Diseño Web</a>
                     <a href="#" class="list-group-item">CSS</a>
                     <a href="#" class="list-group-item">Cursos</a>
                     <a href="#" class="list-group-item">Desarrollo Web</a>
