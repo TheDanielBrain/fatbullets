@@ -6,18 +6,17 @@
             <section class="col-md-9">
                 <div class="post clearfix">
                     <article>
-                        <h2 class="titulo">Titulo del articulo</h2>
-                        <p class="fecha">1 de febrero de 2016</p>
+                        <h2 class="titulo"><?php echo $post['title']; ?></h2>
+                        <p class="fecha"><?php echo fecha($post['date']); ?></p>
                         <div class="thumb">
-                            <a href="#">
-                                <img src="./img/posts/1.png" alt="">
-                            </a>
+                            <img class="img-thumbnail" src="./img/posts/<?php echo $post['thumb']; ?>" alt="">
                         </div>
-                        <p class="extracto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic accusantium, minus officia fugiat fugit eos voluptas neque, quaerat a laudantium modi laboriosam numquam officiis nemo dicta non quis sunt dolorem.</p>
+                        </br>
+                        <p class="extracto text-justify"><?php echo ($post['text']); ?></p>
                         <div class="row">
-                            <div class="col-sm-8">
+                            <div>
                                 <div class="embed-responsive embed-responsive-16by9">
-                                  <iframe class="embed-responsive-item" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/dE0jEELOqds" allowfullscreen seamless></iframe>
+                                  <iframe class="embed-responsive-item" width="560" height="315" frameborder="0" src="<?php echo $post['link']; ?>" allowfullscreen seamless></iframe>
                                 </div>
                             </div>
                         </div>

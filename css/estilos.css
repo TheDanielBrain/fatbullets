@@ -15,14 +15,14 @@ body {
         margin-top: 25px;
 }
 h2{
-    margin: 0;     
+    margin: 0;
     color: #666;
     padding-top: 0px;
     font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;    
+    font-family: "trebuchet ms", sans-serif;
 }
 .item{
-    background: #333;    
+    background: #333;
     text-align: center;
     height: 300px !important;
 }
@@ -41,13 +41,6 @@ h2{
     left: 0;
     margin-top: 15px;
 }
-
-/*.panel-footer{
-  background-color:#337ab7;
-  border-color: #337ab7;
-  color: #FFFFFF;
-
- }*/
 
 .copyright{
   color: #FFF;
@@ -86,54 +79,54 @@ h2{
 }
 
 /*-------------------Estilos slideshow-------------------- */
-/** {
+* {
   margin:0;
   padding:0;
   box-sizing: border-box;
-}*/
- 
+}
+
 .main {
   width:90%;
   max-width:1000px;
   margin:20px auto;
 }
- 
+
 .slides {
   width:100%;
 }
- 
+
 .slides img {
   width:100%;
 }
- 
+
 .slidesjs-pagination {
   list-style:none;
   overflow:hidden;
   float:left;
 }
- 
+
 .slidesjs-pagination li {
   float:left;
 }
- 
+
 .slidesjs-pagination li a {
   display:block;
   padding:5px 10px;
   color:#fff;
-  
+
   float:left;
 }
- 
+
 .slidesjs-pagination li a:hover {
   background:#000;
 }
- 
+
 .slides .active {
-  background:#000;
+  background:#464646;
 }
- 
+
 .slidesjs-navigation{
-  background:#000;
+  background:#464646;
   color:#fff;
   text-decoration:none;
   display:inline-block;
@@ -182,16 +175,13 @@ h2{
 }
 
 /* --------- estilos contenido ------------*/
-.contenedor {
+/*.contenedor {
   max-width: 1000px;
   width: 90%;
   margin: auto;
-}
+}*/
 
 .post {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-
   width: 100%;
   background: #fff;
   box-shadow: 0px 0px 5px rgba(0,0,0, .5);
@@ -235,6 +225,15 @@ h2{
 .post article .continuar {
   color:#BB1F35;
   font-weight: bold;
+}
+
+.post .thumb {
+  margin-right:10px;
+  width:40%;
+}
+
+.post .thumb img {
+  width:100%;
 }
 
 /* --- Paginacion --- */

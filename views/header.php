@@ -5,6 +5,9 @@
 <title>Fatbullets Studio</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="StyleSheet" href="css/estilos.css" type="text/css">
+
+<!--<link rel="StyleSheet" href="css/styles.css" type="text/css">-->
+
 <link rel="stylesheet" href="fonts/style.css" type="text/css">
 <link href="css/flash_theme.css" rel="stylesheet" type="text/css"/>
 <link href='img/fav.ico' rel='icon' type='image/x-icon'/>
@@ -33,9 +36,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Fatbullets</a>
+            <a href="index.php" class="navbar-brand">Fatbullets</a>
         </div>
-        
+
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <!-- <li class="active"><a href="index.php">Inicio</a></li> -->

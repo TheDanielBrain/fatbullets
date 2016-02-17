@@ -1,0 +1,136 @@
+-- MySQL dump 10.13  Distrib 5.6.23, for Win32 (x86)
+--
+-- Host: localhost    Database: fatbullets
+-- ------------------------------------------------------
+-- Server version	5.6.24-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `articles`
+--
+
+DROP TABLE IF EXISTS `articles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `articles` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) DEFAULT NULL,
+  `extract` varchar(200) DEFAULT NULL,
+  `date` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `text` text,
+  `thumb` varchar(50) DEFAULT NULL,
+  `link` varchar(2086) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `articles`
+--
+
+LOCK TABLES `articles` WRITE;
+/*!40000 ALTER TABLE `articles` DISABLE KEYS */;
+INSERT INTO `articles` VALUES (1,'Crxcknt Svpx - Estado Postmortem (Stream)','Flows, delibery y un contenido lleno de una atmosfera oscura y tertica nos dejarán en Estado Postmortem','2016-02-13 16:42:44','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','supaEstadoPostmortem.jpg','https://www.youtube.com/embed/6AoY5nfhcZg?list=PLht5p-w_CciEcHYp3hTso4BF-yKMu_uOe'),(2,'Funkadellics - Drum Kid & Dyslexic (Instrumental)','Jhon D. & Dyslexic se unen y nos dejan esta joya.','2016-02-14 06:23:38','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','','https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221610398&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'),(3,'Daniel Brain & Jhon D. All - Espacio (Single)','Track que se desprende de la mictape Puños al aire Vol. 3','2016-02-14 06:23:38','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','','https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240761158&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'),(4,'Chris Knoxx - Loca (Single)','ÉL es Chris Knoxx y nos trae un nuevo sencillo.','2016-02-14 06:23:38','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','','https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243168682&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'),(5,'Cancer Die - Hecatombe Lp (Stream)','Barras, flows, drums duros y un estilo propio con diferentes temas nos dan como resultado este disco.','2016-02-14 06:23:38','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','cancer.jpg','https://bandcamp.com/EmbeddedPlayer/album=1425488492/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/'),(6,'Tony J. Hayan\'s - Escala de grises Ep (Stream)','Escucha y descarga el más reciente proyecto de Tony J. Hayan\'s','2016-02-14 06:23:38','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','tony.jpg','https://bandcamp.com/EmbeddedPlayer/album=1130478402/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/'),(7,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-13 16:43:19','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(8,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(9,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(10,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(11,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(12,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(13,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(14,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(15,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(16,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(17,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(18,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(19,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape'),(20,'James Bones Presenta Uso Exclusivo Beat Tape','James Bones nos deja una pequeña selección de cortes de sus diferentes producciones que ha trabajado para los emcees que lo rodean.','2016-02-16 03:17:43','Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.','unoExclusivo.png','https://bandcamp.com/EmbeddedPlayer/album=1143928732/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/\" seamless><a href=\"http://fatbulletsgang.bandcamp.com/album/uso-exclusivo-beat-tape');
+/*!40000 ALTER TABLE `articles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu`
+--
+
+DROP TABLE IF EXISTS `menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL,
+  `title` varchar(50) DEFAULT NULL,
+  `role_id` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_menu_role1_idx` (`role_id`),
+  CONSTRAINT `fk_menu_role1` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu`
+--
+
+LOCK TABLES `menu` WRITE;
+/*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+INSERT INTO `menu` VALUES (1,'Index',NULL,1),(2,'Estrenos',NULL,1),(3,'Integrantes',NULL,1),(4,'Tienda',NULL,0),(5,'Contacto',NULL,1),(6,'Iniciar Sesión',NULL,0);
+/*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role`
+--
+
+DROP TABLE IF EXISTS `role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `role` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role`
+--
+
+LOCK TABLES `role` WRITE;
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (0,'not user'),(1,'admin'),(2,'cc'),(3,'client');
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `nickname` varchar(50) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `pass` varchar(255) DEFAULT NULL,
+  `roleId` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_users_role_idx` (`roleId`),
+  CONSTRAINT `fk_users_role` FOREIGN KEY (`roleId`) REFERENCES `role` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-02-16 20:52:54
